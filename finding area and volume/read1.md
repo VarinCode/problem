@@ -1,6 +1,6 @@
 # finding area and volume
 
-<img src="https://raw.githubusercontent.com/Varin471/proposition/main/finding%20area%20and%20volume/img/img.jpg" ><br>
+<img src="https://raw.githubusercontent.com/Varin471/problem/main/finding%20area%20and%20volume/img/img.jpg" ><br>
 <hr>
 <i><p>soruce</p></i>
 
