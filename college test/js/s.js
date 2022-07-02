@@ -26,8 +26,8 @@
 // Change : 0
 // RUNFILE: node s.js
 
-const prompt = require('prompt-sync')()
-let hour = prompt("Enter Hour : ")
+const input = require('prompt-sync')()
+const hour = input("Enter Hour : ")
 
 function tutor(total, change, money = 250) {
     for (i = 1; i < hour; i++) {
@@ -35,7 +35,7 @@ function tutor(total, change, money = 250) {
     }
     total = money
     console.log("Total : " + total);
-    let pay = prompt("Pay : ")
+    let pay = input("Pay : ")
     change = pay - total
     console.log("Change : " + change);
 }
