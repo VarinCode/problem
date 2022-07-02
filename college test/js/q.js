@@ -10,13 +10,13 @@
 // Total : 2250
 // RUNFILE: node q.js
 
-const prompt = require('prompt-sync')()
-const use = prompt("จำนวนชั่วโมงที่เรียน = ")
-tutor = (hour, charge_tuition) => {
-    for (input = use; hour < input;) {
-        hour++
-        charge_tuition += 450
+const input = require('prompt-sync')()
+const hour = input("จำนวนชั่วโมงที่เรียน = ")
+tutor = (increase, total) => {
+    while(increase < hour){
+        increase++
+        total += 450
     }
-    console.log("ค่าใช้จ่ายทั้งหมดคือ " + charge_tuition + " บาท");
+    console.log("Total : " + total);
 }
 tutor(1, 450)
