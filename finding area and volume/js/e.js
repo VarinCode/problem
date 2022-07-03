@@ -1,15 +1,15 @@
 // สูตรการหาพื้นที่สี่เหลี่ยมด้านขนาน
 // RUNFILE: node e.js
 
-const promptsync = require('prompt-sync')()
-var base = "ฐาน" // ฐาน
-var height = "สูง" // สูง
-var baseXheight = [base, height]
-cal = () => {
+const input = require('prompt-sync')()
+let base = "ฐาน" // ฐาน
+let height = "สูง" // สูง
+let baseXheight = [base, height]
+const calculate = (result , $base , $height) => {
     console.log("การหาพื้นที่สี่เหลี่ยมด้านขนาน")
-    let use1 = promptsync(baseXheight[0] + " = ")
-    let use2 = promptsync(baseXheight[1] + " = ")
-    return use1 * use2
+    $base = input(baseXheight[0] + " = ")
+    $height = input(baseXheight[1] + " = ")
+    result = use1 * use2
+    return result
 }
-
-console.log(cal())
+console.log(calculate())
