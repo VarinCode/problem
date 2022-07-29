@@ -8,9 +8,9 @@ const input = require('prompt-sync')();
 const a = Number(input('- '))
 const b = Number(input('- '))
 const c = Number(input('- '))
-let prototype = [a, b, c];
-console.log(prototype);
+let num = [a, b, c];
+console.log(num);
 
-let item = prototype.pop()
-prototype.unshift(item)
-console.log(prototype);
+let item = num.pop()
+num.unshift(item)
+console.log(num);
